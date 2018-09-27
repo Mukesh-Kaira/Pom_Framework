@@ -15,6 +15,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
 
+import Utility.ModifyHeader;
+
 public class BaseClass {
 	
 	public static  WebDriver driver;
@@ -41,7 +43,7 @@ public class BaseClass {
 
 	}
 	
-	public static void intialization()
+	public static void intialization() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\mukesh.kaira\\workspace\\prac\\src\\drivers\\chromedriver.exe");
@@ -58,6 +60,8 @@ public class BaseClass {
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
+	
+	ModifyHeader header=new ModifyHeader();
 	}
 	
 	

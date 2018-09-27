@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import Base.BaseClass;
 import Utility.Database;
+import Utility.ModifyHeader;
 import pages.AgentSign;
 
 public class SignTest extends BaseClass {
@@ -21,6 +22,7 @@ public class SignTest extends BaseClass {
 	}
 	
 	AgentSign as;
+	
 	
 	@BeforeSuite(alwaysRun = true)
 	public void Configuration_check()
@@ -43,9 +45,10 @@ public class SignTest extends BaseClass {
 		as=new AgentSign(driver);
 	}
 	@BeforeClass
-	public void header() throws InterruptedException
+	public void header() throws Exception
 	{
-		modifyheader();
+		
+		ModifyHeader.Modify_Header();
 	}
 	
     @Test(priority=1)
