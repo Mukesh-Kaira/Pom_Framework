@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="ttn" duration-ms="8715" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:53:00Z">
+  <suite name="ttn" duration-ms="9334" started-at="2018-09-28T06:58:49Z" finished-at="2018-09-28T06:58:59Z">
     <groups>
     </groups>
-    <test name="ttn" duration-ms="8715" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:53:00Z">
+    <test name="ttn" duration-ms="9334" started-at="2018-09-28T06:58:49Z" finished-at="2018-09-28T06:58:59Z">
       <class name="ttn.TtnTest">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:ttn.TtnTest@5e5792a0]" name="openbrowser" duration-ms="4244" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:52:55Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:ttn.TtnTest@77caeb3e]" name="openbrowser" duration-ms="4543" started-at="2018-09-28T06:58:49Z" finished-at="2018-09-28T06:58:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="gotourl()[pri:1, instance:ttn.TtnTest@5e5792a0]" name="gotourl" duration-ms="4423" started-at="2018-09-28T06:52:55Z" finished-at="2018-09-28T06:53:00Z">
+        <test-method status="PASS" signature="gotourl()[pri:1, instance:ttn.TtnTest@77caeb3e]" name="gotourl" duration-ms="4739" started-at="2018-09-28T06:58:54Z" finished-at="2018-09-28T06:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotourl -->
