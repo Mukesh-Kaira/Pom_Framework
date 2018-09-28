@@ -12,19 +12,28 @@ public class WebAction extends BaseClass {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void click(WebElement ele)
+	public static void click(WebElement element)
 	{
-		ele.click();
+		try {
+		if(element!=null)
+		{
+		element.click();
+		}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
-	public static void sendkeys(WebElement el,String text)
+	public static void sendkeys(WebElement element,String text)
 	{
-		el.sendKeys(text);
+		element.sendKeys(text);
 	}
 	
-	public static void dropdown(WebElement el,String selectby,String value)
+	public static void dropdown(WebElement element,String selectby,String value)
 	{
-		Select drop= new Select(el);
+		Select drop= new Select(element);
 		if(selectby.equals("index"))
 		{ 
 			int index=Integer.parseInt(value);
@@ -32,8 +41,8 @@ public class WebAction extends BaseClass {
 		}
 		else if (selectby.equals("value"))
 		{
-			String value_tofill=selectby;
-			drop.selectByValue(value_tofill);
+			String value_to_fill=selectby;
+			drop.selectByValue(value_to_fill);
 		}
 		
 		else if(selectby.equals("visibletext"))

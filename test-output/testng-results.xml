@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="HIX" duration-ms="38861" started-at="2018-09-07T07:14:10Z" finished-at="2018-09-07T07:14:49Z">
+  <suite name="ttn" duration-ms="8715" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:53:00Z">
     <groups>
     </groups>
-    <test name="HIX" duration-ms="38861" started-at="2018-09-07T07:14:10Z" finished-at="2018-09-07T07:14:49Z">
-      <class name="com.basic.prac.SignTest">
-        <test-method status="PASS" signature="Configuration_check()[pri:0, instance:com.basic.prac.SignTest@27efef64]" name="Configuration_check" is-config="true" duration-ms="3287" started-at="2018-09-07T07:14:07Z" finished-at="2018-09-07T07:14:10Z">
+    <test name="ttn" duration-ms="8715" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:53:00Z">
+      <class name="ttn.TtnTest">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:ttn.TtnTest@5e5792a0]" name="openbrowser" duration-ms="4244" started-at="2018-09-28T06:52:51Z" finished-at="2018-09-28T06:52:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Configuration_check -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.basic.prac.SignTest@27efef64]" name="setup" is-config="true" duration-ms="9387" started-at="2018-09-07T07:14:10Z" finished-at="2018-09-07T07:14:19Z">
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="gotourl()[pri:1, instance:ttn.TtnTest@5e5792a0]" name="gotourl" duration-ms="4423" started-at="2018-09-28T06:52:55Z" finished-at="2018-09-28T06:53:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="header()[pri:0, instance:com.basic.prac.SignTest@27efef64]" name="header" is-config="true" duration-ms="7262" started-at="2018-09-07T07:14:19Z" finished-at="2018-09-07T07:14:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- header -->
-        <test-method status="PASS" signature="navigate_url()[pri:1, instance:com.basic.prac.SignTest@27efef64]" name="navigate_url" duration-ms="15883" started-at="2018-09-07T07:14:27Z" finished-at="2018-09-07T07:14:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigate_url -->
-        <test-method status="PASS" signature="signin()[pri:2, instance:com.basic.prac.SignTest@27efef64]" name="signin" duration-ms="1438" started-at="2018-09-07T07:14:42Z" finished-at="2018-09-07T07:14:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signin -->
-      </class> <!-- com.basic.prac.SignTest -->
-      <class name="com.basic.prac.CreateProfileTest">
-        <test-method status="PASS" signature="setup()[pri:1, instance:com.basic.prac.CreateProfileTest@6f7fd0e6]" name="setup" duration-ms="7" started-at="2018-09-07T07:14:42Z" finished-at="2018-09-07T07:14:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="click_create_customer()[pri:2, instance:com.basic.prac.CreateProfileTest@6f7fd0e6]" name="click_create_customer" duration-ms="1081" started-at="2018-09-07T07:14:44Z" finished-at="2018-09-07T07:14:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- click_create_customer -->
-        <test-method status="PASS" signature="fill_create_profilepage()[pri:3, instance:com.basic.prac.CreateProfileTest@6f7fd0e6]" name="fill_create_profilepage" duration-ms="2833" started-at="2018-09-07T07:14:45Z" finished-at="2018-09-07T07:14:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fill_create_profilepage -->
-        <test-method status="PASS" signature="usps_fill()[pri:4, instance:com.basic.prac.CreateProfileTest@6f7fd0e6]" name="usps_fill" duration-ms="935" started-at="2018-09-07T07:14:48Z" finished-at="2018-09-07T07:14:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- usps_fill -->
-      </class> <!-- com.basic.prac.CreateProfileTest -->
-    </test> <!-- HIX -->
-  </suite> <!-- HIX -->
+        </test-method> <!-- gotourl -->
+      </class> <!-- ttn.TtnTest -->
+    </test> <!-- ttn -->
+  </suite> <!-- ttn -->
 </testng-results>

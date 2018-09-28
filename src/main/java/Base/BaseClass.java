@@ -45,23 +45,27 @@ public class BaseClass {
 	
 	public static void intialization() throws InterruptedException
 	{
+		String currentDir = System.getProperty("user.dir");
+        System.out.println("Current dir using System:" +currentDir);
+        
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\mukesh.kaira\\workspace\\prac\\src\\drivers\\chromedriver.exe");
-	
-	File addonpath = new File(
+				System.getProperty("user.dir")+"\\src\\drivers\\chromedriver.exe");
+	// code commented because the code is specific for chorme extension
+	/*File addonpath = new File(
 			"C:/Users/mukesh.kaira/workspace/prac/src/header/extension_2_0_7.crx");
 	ChromeOptions options = new ChromeOptions();
 	options.addExtensions(addonpath);
 	
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-	driver =new ChromeDriver(options);
+	driver =new ChromeDriver(options);*/
+		
+		driver= new ChromeDriver();
 	
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
 	
-	ModifyHeader header=new ModifyHeader();
 	}
 	
 	
