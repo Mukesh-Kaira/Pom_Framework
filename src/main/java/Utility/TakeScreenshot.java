@@ -6,16 +6,26 @@ import java.io.IOException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import Base.BaseClass;
+
 import org.apache.commons.io.FileUtils;
 
 
-public class TakeScreenshot {
+public class TakeScreenshot extends BaseClass{
 	
-	//static String filepath=System.getProperty("user.dir")+"\\src\\ScreenShot\\test.jpg";
+	
+	public TakeScreenshot() throws InterruptedException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	
 	public  static void Take_Screenshot(WebDriver driver,String filename) throws IOException
 	{
-		//Convert web driver object to TakeScreenshot
+	   	
 
        File scrShot =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 

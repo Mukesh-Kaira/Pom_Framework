@@ -13,8 +13,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import Utility.EventDef;
 import Utility.ModifyHeader;
 
 public class BaseClass {
@@ -22,9 +24,11 @@ public class BaseClass {
 	public static  WebDriver driver;
 	public static Properties prop;
 	
+	public static EventFiringWebDriver eventfire;
 	public  BaseClass() throws InterruptedException
 	{
 
+		
 	try{
 		  prop = new Properties();
 		  FileInputStream conf = new FileInputStream(System.getProperty("user.dir")+"/src/configurations/conf.properties");
@@ -65,6 +69,10 @@ public class BaseClass {
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
+
+	eventfire = new EventFiringWebDriver(driver);
+	EventDef event=new EventDef();
+	eventfire.register(event);
 	
 	}
 	

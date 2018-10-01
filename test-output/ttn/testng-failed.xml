@@ -6,7 +6,6 @@
       <class name="ttn.TtnTest">
         <methods>
           <include name="gotourl"/>
-          <include name="openbrowser"/>
         </methods>
       </class> <!-- ttn.TtnTest -->
     </classes>
